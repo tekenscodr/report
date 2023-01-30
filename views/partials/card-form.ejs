@@ -1,0 +1,80 @@
+<form action="/create" method="POST" enctype="multipart/form-data"  role="form" class="needs-validation" novalidate>
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header pb-0">
+            <div class="d-flex align-items-center">
+              <p class="mb-0">Add Event</p>
+              <button type="submit" class="btn btn-primary btn-sm ms-auto">Submit</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Title</label>
+                  <input name="title" class="form-control" type="text" placeholder="Title">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group" id="datetimepicker1">
+                  <label for="example-text-input" class="input-group date form-control-label" >Date</label>
+                  <input name="date" type="datetime-local" class=" form-control" placeholder="Date">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Time</label>
+                  <input name="time" class="form-control" type="text" placeholder="e.g 10 GMT">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Duration</label>
+                  <input class="form-control" type="text" placeholder="e.g 4hr, 2wks" name="duration">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Venue</label>
+                  <input class="form-control" type="text" placeholder="Duration" name="venue">
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Image</label>
+                  <input class="form-control" type="file" placeholder="Duration" name="file">
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Description</label>
+                  <input class="form-control" type="text" placeholder="Description" name="description">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer pt-3  ">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6 mb-lg-0 mb-4">
+            <div class="copyright text-center text-sm text-muted text-lg-start">
+              © <script>
+                document.write(new Date().getFullYear())
+              </script>,
+              made with <i class="fa fa-heart"></i> by
+              <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Tekens Technology</a>
+              for a better web.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</form>
